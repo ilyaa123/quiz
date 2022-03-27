@@ -54,6 +54,11 @@ body{
     padding: 10px;
     font-size: 20px;
     margin: 40px 0;
+    transition-duration: .5s;
+}
+.createQuiz input:focus{
+    width: 51%;
+    border-radius: 5px;
 }
 .quest{
     padding: 25px;
@@ -83,6 +88,28 @@ body{
     width: 50px;
     height: 50px;
     background-color: #EEE;
-    color: #000;
+    color: #6F2982;
     border-radius: 50%;
+}
+@media (max-width: 992px) {
+    .createQuiz input{
+        width: 80%;
+    }
+    .createQuiz input:focus{
+        width: 81%;
+    }
+}
+@media (max-width: 576px) {
+    .quest{
+        padding: 15px;
+    }
+    .createQuiz input{
+        width: 95%;
+    }
+    .createQuiz input:focus{
+        width: 96%;
+    }
+    .up{
+        left: 25px;
+    }
 }
