@@ -1,10 +1,11 @@
 'use strict';
+//import { object } from '../createQuiz/createQuiz.js';
 const main = document.querySelector('.main');
 const selection = document.querySelector('.selection');
 const title = document.querySelector('.main__title');
 
 const getData = () => {
-    return fetch('db/quiz_db.json').then(response => response.json())
+    return fetch('db/quiz_db.json').then(response => response.json());
 };
 
 const showElem = elem => {
@@ -42,6 +43,9 @@ const hideElem = (elem, cb) => {
 };
 
 const renderTheme = (themes) => {
+    const a =document.querySelector('.create');
+    a.classList.remove('dspl-none');
+
     const list = document.querySelector('.selection__list');
     list.textContent = '';
 
@@ -167,6 +171,9 @@ const showResult = (result, quiz) => {
 };
 
 const renderQuiz = quiz => {
+    const a = document.querySelector('.create');
+    a.classList.add('dspl-none');
+
 
     const questionBox = document.createElement('div');
     questionBox.className = 'main__box main__box_question';
@@ -252,6 +259,15 @@ const initQuiz = async () => {
 
     const data = await getData();
 
+    const obj = localStorage.getItem('obj');
+    const object = JSON.parse(obj);
+    
+    if (obj) {
+        for (let i = 0; i < object.length; i++) {
+            data.push(object[i]);
+        }
+    }
+    console.log(data);
     const buttons = renderTheme(data);
 
     addClick(buttons, data);

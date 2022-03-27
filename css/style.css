@@ -45,7 +45,7 @@ button{
 
 
 .header{
-    background-color: #296C82;
+    background-color: #6F2982;
     padding: 13px 0;
 }
 .header__container{
@@ -97,7 +97,7 @@ button{
     border-radius: 8px;
     border: none;
     background-color: transparent;
-    color: #296C82;
+    color: #6F2982;
     font-weight: 600;
     font-size: 18px;
     display: block;
@@ -107,7 +107,7 @@ button{
     transition-timing-function: ease-in-out;
 }
 .main__btn:hover{
-    background-color: #296C82;
+    background-color: #6F2982;
     color: #fff;
 }
 
@@ -139,7 +139,7 @@ button{
 .selection__theme{
     width: 100%;
     max-width: 520px;
-    background-color: #F1F9FB;
+    background-color: #FCEBFB;
     border-radius: 12px;
     font-weight: 600;
     font-size: 22px;
@@ -148,7 +148,7 @@ button{
     padding: 16px 20px;
 }
 .selection__theme:hover{
-    background-color: #dff7fd;
+    background-color: #ffdbfd;
 }
 .selection__theme:not(:last-child){
     margin-right: 20px;
@@ -161,7 +161,7 @@ button{
     text-align: center;
     font-weight: 600;
     font-size: 22px;
-    color: #296C82;
+    color: #6F2982;
 }
 .selection__result-text{
     display: block;
@@ -402,8 +402,26 @@ button{
     }
     
 }
-
-
+.create{
+    display: block;
+    width: 300px;
+    padding: 15px;
+    margin: 25px auto;
+    text-align: center;
+    background-color: #6F2982;
+    color: #EEE;
+    text-decoration: none;
+    border-radius: 12px;
+    transition-duration: .3s;
+}
+.create:hover{
+    background-color: #fff;
+    color: #6F2982;
+    border: 1px solid #6F2982;
+} 
+.dspl-none{
+    display: none;
+}
 
 
 

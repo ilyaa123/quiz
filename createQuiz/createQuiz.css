@@ -1,0 +1,88 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: inherit;
+}
+input{
+    border: 0px;
+    outline: none;
+    box-shadow: 0 0 6px 0 #EEE;
+}
+body{
+    background-color: #6F2982;
+    color: #EEE;
+}
+.createQuiz{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+.end-quest{
+    background-color: inherit;
+    color: #EEE;
+    padding: 15px;
+    font-size: 20px;
+    border: 1px solid #EEE;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+.end-quest:hover{
+    color: #6F2982;
+    background-color: #EEE;
+}
+.add-quest{
+    background-color: #EEE;
+    color: #6F2982;
+    padding: 10px 20px;
+    border: 1px solid #6F2982;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+.add-quest:hover{
+    background-color: inherit;
+    color: #EEE;
+    border: 1px solid #EEE;
+}
+.createQuiz input{
+    width: 50%;
+    padding: 10px;
+    font-size: 20px;
+    margin: 40px 0;
+}
+.quest{
+    padding: 25px;
+    border: 3px solid #EEE;
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.quest > input{
+    margin: 20px 0;
+}
+.up{
+    position: fixed;
+    left: 50px;
+    top: 50px;
+    width: 50px;
+    height: 50px;
+}
+.up > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    background-color: #EEE;
+    color: #000;
+    border-radius: 50%;
+}
